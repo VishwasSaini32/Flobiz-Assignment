@@ -32,5 +32,5 @@ nodejs server.js
 
 Go to `Angular` folder and type (http://localhost:4200/):
 ```Angular
-nq serve --open
+ng serve --open
 ```
