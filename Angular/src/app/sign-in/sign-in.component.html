@@ -1,0 +1,14 @@
+<div class="contaner" style="padding : 5%">
+<form class="form-signin" [formGroup]="loginForm">
+  <h1 class="h3 mb-3 font-weight-normal text-center">Sign In</h1>
+  <label for="inputEmail" class="sr-only" >Email</label>
+  <input type="text" id="inputEmail" class="form-control" placeholder="email" formControlName="email" autofocus>
+  <label for="inputPassword" class="sr-only" >Password</label>
+  <input type="password" id="inputPassword" formControlName="pass" class="form-control" placeholder="Password">
+ 
+  <button class="btn btn-lg btn-primary btn-block" (click)="login()" type="submit">Sign in</button>
+  <p class="text-muted text-light"><a class="nav-link" routerLink="/signUp">Not registered?</a></p>
+
+  <p class="mt-5 mb-3 text-muted">&copy; placeholder</p>
+</form>
+</div>

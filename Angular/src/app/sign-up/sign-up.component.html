@@ -1,0 +1,93 @@
+<div class="contaner" style="padding : 5%">
+<form class="form-signUp" [formGroup]="signUpForm">
+  <h1 class="h3 mb-3 font-weight-normal text-center">Sign Up</h1>
+  <label for="email"></label>
+    <input
+      type="email"
+      id="email"
+      placeholder="email address"
+      class="form-control"
+      formControlName="email">
+    <span 
+      *ngIf="!signUpForm.get('email').valid && signUpForm.get('email').touched"
+      class="help-block">
+      Please enter a valid email address
+    </span>
+  <label for="pass"></label>
+  <input type="password" 
+    id="pass" 
+    class="form-control" 
+    placeholder="password"
+    formControlName="pass">
+    <span 
+      *ngIf="!signUpForm.get('pass').valid && signUpForm.get('pass').touched"
+      class="help-block">
+      Enter a password with length of 8 (eg: P123abc@)
+  </span>
+  <label for="bio"></label>
+  <input type="text" 
+    id="bio" 
+    class="form-control" 
+    placeholder="Bio"
+    formControlName="bio">
+    <span 
+      *ngIf="!signUpForm.get('bio').valid && signUpForm.get('bio').touched"
+      class="help-block">
+      Please write something about yourself
+  </span>
+  <label for="gender"></label>
+  <input type="text" 
+    id="gender" 
+    class="form-control" 
+    placeholder="Gender"
+    formControlName="gender">
+    <span 
+      *ngIf="!signUpForm.get('gender').valid && signUpForm.get('gender').touched"
+      class="help-block">
+      Please provide your gender
+  </span>
+  <label for="age"></label>
+  <input type="text" 
+    id="age" 
+    class="form-control" 
+    placeholder="age"
+    formControlName="age">
+    <span 
+      *ngIf="!signUpForm.get('age').valid && signUpForm.get('age').touched"
+      class="help-block">
+      Please enter a age
+  </span>
+  <label for="first_name"></label>
+  <input type="text" 
+    id="first_name" 
+    class="form-control" 
+    placeholder="First name"
+    formControlName="first_name">
+    <span 
+      *ngIf="!signUpForm.get('first_name').valid && signUpForm.get('first_name').touched"
+      class="help-block">
+      Please enter your first name
+  </span>
+  <label for="last_name"></label>
+  <input type="text" 
+    id="last_name" 
+    class="form-control" 
+    placeholder="Last name"
+    formControlName="last_name">
+    <span 
+      *ngIf="!signUpForm.get('last_name').valid && signUpForm.get('last_name').touched"
+      class="help-block">
+      Please enter your last name
+  </span>
+  <button 
+    class="btn btn-lg btn-primary btn-block" 
+    type="submit" 
+    id="button" (click)="register()">
+    Submit</button>
+    <!-- <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" type="submit">Register</button>
+    </div> -->
+  <p id="back"><a routerLink="/">Go Back</a></p>
+
+</form>
+</div>
