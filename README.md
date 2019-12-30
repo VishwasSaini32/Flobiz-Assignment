@@ -27,10 +27,10 @@ npm install
 ## Run the app
 Go to `nodejs` folder and type (http://localhost:3000/) :
 ```nodejs
-nodejs server.js
+npm start
 ```
 
 Go to `Angular` folder and type (http://localhost:4200/):
 ```Angular
-nq serve --open
+ng serve --open
 ```
